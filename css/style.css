@@ -1,0 +1,234 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+svg:hover{
+	cursor: pointer;
+}
+button, input, select, textarea {
+ font-family : inherit;
+ font-size : 100%;
+}
+html{
+	width: 100%;
+	text-align:center; 
+	font-family: arial;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	background-color:#273248;
+	
+}
+#menu img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	
+}
+nav{
+	display: flex;
+	flex-basis:  1;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	font-family: arial;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+#showcase{
+	 background-image: url("../img/teclado.jpg"); 
+	 height: 90vh;
+	 width: 100%;
+	 background-size:  cover; 
+	 background-position:center;
+	 color:white;
+	 text-shadow:0 0 20px black;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-around;
+	 font-size: 5em;
+	 overflow: hidden;
+	 
+}
+.frase{
+	background-color:grey;
+	color:white;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sobremi{
+	padding: 20px;
+}
+.sobremi h1,.contacto h1{
+	margin-bottom: 10px;
+}
+.contacto{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+form input[type=text],textarea{
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	flex:1;
+	padding: 5px;
+	border-color:#ebebeb;
+	border-style: solid;
+	border-radius: 5px;
+	outline: none;
+	border-width: 2px;
+}
+form input[type=text]:focus,textarea:focus{
+	border-color:#00000061;
+}
+textarea{
+	height: 90px;
+	resize: none;
+}
+form input[type=submit]{
+	margin: 20px 0px;
+	border-radius: 10px;
+	width: 120px;
+	height: 30px;
+	align-self: center;
+}
+
+.cursos{
+	margin-top: 20px;
+}
+.cursos h1{
+	margin-top: 10px;
+	margin: 5px;
+}
+
+footer{
+	background-color: #273248;
+	color: white;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 200px;
+}
+footer nav{
+	text-align:justify; 
+	flex-direction: column;
+}
+footer #logo{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+footer p{
+	margin-top: 10px;
+}
+footer svg{
+	margin:0 3px;
+}
+.gallery{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.galeria{
+	margin: 20px;
+	flex:1;
+}
+.galeria img{
+	border:1px solid black;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+.galeriajs,.galeriajs div{
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	display: none;
+	text-transform: capitalize;
+}
+.galeriajs{
+	margin-bottom: 20px;
+}
+.galeriajs div{
+	flex-direction: row;
+}
+.galeriajs img{
+	border:1px solid;
+	height: 300px;
+	width: 300px;
+	margin:15px 10px;
+}
+.certificados,.paginas{
+	display: flex;
+	flex-wrap: nowrap;
+}
+@media(max-width: 320px){
+	#menu{
+		flex-direction: column;
+	}
+	#menu img{
+		align:center;
+		margin-bottom: 10px;
+	}
+	footer img{
+		margin-top: 10px;
+	}
+}
+@media(max-width: 450px){
+	nav{
+		flex-direction: column;
+	}
+	#menu img{align:center;}
+	#showcase{font-size: 3em}
+	.galeriajs img{
+		height: 200px;
+		width: 200px;
+	}
+	.contacto{
+		width: 80%;
+	}
+}
+@media(max-width: 580px){
+	footer{
+		height: 250px;
+	}
+	footer hr{display: none}
+	form input[type=text],textarea{
+		margin-left: 0;
+	}
+	.gallery{display: none}
+	.galeriajs,.galeriajs div{display: flex;}
+}
+@media(max-width: 840px){
+
+}
