@@ -16,6 +16,7 @@ html{
 	text-align:center; 
 	font-family: arial;
 }
+h1{text-transform: uppercase;}
 header{
 	display: flex;
 	flex-direction: column;
@@ -48,6 +49,9 @@ nav a{
 	font-family: arial;
 	text-transform: uppercase;
 	margin: 0 10px;
+}
+nav a:hover{
+	background-color:red;
 }
 #showcase{
 	 background-image: url("../img/teclado.jpg"); 
@@ -117,6 +121,8 @@ form input[type=submit]{
 	width: 120px;
 	height: 30px;
 	align-self: center;
+	outline: none;
+	cursor: pointer;
 }
 
 .cursos{
@@ -151,6 +157,9 @@ footer p{
 footer svg{
 	margin:0 3px;
 }
+footer hr{
+	flex: 0;
+}
 .gallery{
 	display:flex;
 	flex-wrap: wrap;
@@ -169,6 +178,9 @@ footer svg{
 	height: 200px;
 	margin: 20px;
 }
+.galeria img:hover{
+	box-shadow: 0 0 2px 1px rgba(0, 0, 100, 0.5);  
+}
 .galeriajs,.galeriajs div{
 	align-items: center;
 	justify-content: space-around;
@@ -178,6 +190,9 @@ footer svg{
 }
 .galeriajs{
 	margin-bottom: 20px;
+}
+.galeriajs img{
+	padding: 5px;
 }
 .galeriajs div{
 	flex-direction: row;
@@ -213,6 +228,10 @@ footer svg{
 	.galeriajs img{
 		height: 200px;
 		width: 200px;
+	}
+	.galeriajs svg{
+		width: 40px;
+		height: 40px;
 	}
 	.contacto{
 		width: 80%;
