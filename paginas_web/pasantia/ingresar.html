@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ingresar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"">
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		text-align: justify;
+		margin: 0 auto;
+		font-family:Helvetica;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+	}
+	img{
+		width: 90%;
+	}
+	nav{
+		background-color: #222;
+		width: 90%;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		justify-content: flex-start;
+
+	}
+	nav a{
+		text-decoration: none;
+		color:#9d9d9d;
+		margin: 10px;
+	}
+	form{
+		width: 90%;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.main{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.contenedor{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+	}
+	.formField{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	input,textarea,select{
+		height: 35px;
+		margin: 20px;
+		border-radius: 5px;
+		border-style: double;
+		border-color: #0000003b;
+		flex:1;
+	}
+	p{
+		display: inline;
+		width: 115px;
+		margin: 0;
+	}
+	input[type=submit]{
+		width: 100px;
+		align-self: center;
+		background-color: white;
+	}
+
+</style>
+<body>
+	<img src="imagenes/gigsy.jpg">
+	<nav>
+		<a href="">Inicio</a>
+		<a href="">Registrar Estudiante</a>
+		<a href="">Ingresar Reporte</a>
+		<a href="">Consultar Estudiante</a>
+		<a href="">Salir</a>
+	</nav>
+	<h1>Ingresar Datos Del Reporte</h1>
+	<form>
+	<div class="main">
+		<div class="contenedor">
+			<div class="formField">
+				<p>Lugar De <br>Novedad:</p>
+				<input type="tetx" name="">
+			</div>
+			<div class="formField">
+				<p>Fecha:</p>
+				<input type="date" name="">
+			</div>
+			<div class="formField">
+				<p>Infringir Articulo:</p>
+				<input type="tetx" name="">
+			</div>
+			<div class="formField">
+				<p>Literal:</p>
+				<input type="tetx" name="">
+			</div>
+		</div>
+		<div class="contenedor">
+			<div class="formField">
+				<p>Accion:</p>
+				<select>
+					<option value="">Amonestacion Verbal:</option>
+				</select>
+			</div>
+			<div class="formField">
+				<p>Autoridad<br>   Que <br>Reporta:</p>
+				<input type="tetx" name="">
+			</div>
+			<div class="formField">
+				<p>Aclaratoria<br> De La <br>Falta:</p>
+				<textarea></textarea>
+			</div>
+		</div>
+
+	</div>
+	<input type="submit" name="" value="Registrar">
+	</form>
+</body>
+</html>

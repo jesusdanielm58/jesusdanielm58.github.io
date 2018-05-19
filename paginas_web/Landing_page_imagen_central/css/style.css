@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "arial";
+	text-align: center;
+}
+#showcase{
+	 background-image: url("../imagenes/architecture.jpg"); 
+	 height: 100vh;
+	 background-size:  cover; 
+	 background-position:center;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-direction: column;
+	 padding: 0 20px; 
+	 color:white;
+	 text-shadow:0 0 20px black;
+	 overflow: hidden;
+	 text-shadow: 0 0 10px black;
+}
+#espacio{
+	flex:3.5 ;
+}
+
+#texto{
+	flex:1;
+}
+#shocase h1{
+	display: block;
+}
+.section1{
+	padding: 10px 20px;
+	background-color: #f8c58e;
+}
+.section2{
+	padding: 10px 20px;
+}
+.section3{
+	background-color:grey;
+	display: flex;
+}
+.section3 div{
+	padding: 15px;
+	text-align: justify;
+}
+.caja2{
+	background-color: #f8c58e;
+}
+@media(max-width:764px){
+	.section3{
+		display: block;
+	}
+}

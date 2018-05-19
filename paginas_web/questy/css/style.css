@@ -1,0 +1,165 @@
+header{
+	background: #ffffff;
+	width: 100%;
+	font-weight: bold;
+}
+nav{
+	display: flex;
+	justify-content: flex-start;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-basis:85%; 
+	height: 70px;
+	color:#6564a5;
+	margin: 0 0 0 5%;
+	padding: 0;
+}
+li{
+	display: inline;
+}
+header img,section img,.main1 img{
+	width: 30px;
+	height:30px;
+}
+body{
+	background-color:#d9d9d9; 
+	margin:0 auto;
+	padding:0;
+	font-family:"helvetica";
+}
+a{
+	color:black;
+	text-decoration:none; 
+	text-transform: uppercase;
+}
+a.current{
+	color:#6564a5;
+}
+.container{
+	width: 85%;
+	height:200px;
+	overflow: hidden;
+	margin-left: 5%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	text-transform:uppercase;
+}
+.section1 h1{
+	font-size: 35px;
+	margin-bottom: 0;
+}
+.section2{
+	margin-bottom: 35px; 
+	display: flex;
+	align-items: center;
+}
+.section2 p{
+	margin-right: 10px;
+}
+.section2 span{
+	font-weight: bold;
+}
+/*main*/
+.main{
+	display: flex;
+}
+.main1{
+	flex-basis:5%;
+	display: flex;
+	overflow: hidden;
+}
+.main1 img{
+	transform: rotate(180deg);
+	width: 60px;
+	height: 60px;
+	margin: auto;
+}
+.main2{
+flex-basis:85%;
+display: flex;
+justify-content: space-between;
+overflow: auto;
+}
+.main3{
+	flex-basis:10%;
+	display: flex;
+}
+.main3 img{
+	width: 60px;
+	height: 60px;
+	margin: auto;
+}
+.caja{
+	flex-basis: 20%;
+	margin: 0 10px;
+
+}
+.cajatitulo{
+	height: 60px;
+	background-color:#6564a5;
+	color:white;
+	padding: 10px;
+}
+.cajatitulo p{
+ margin: 0;
+ text-transform: uppercase;
+ margin-bottom: 5px;
+ font-size: 15px;
+
+}
+.cajamain{
+	background-color:#333333;
+	height: 300px; 
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 10px;
+}
+.cajamain p{
+	color:white;
+	font-size: 12px;
+}
+.cajamain h3{
+	text-transform: uppercase;
+	color: #8b8b8b;
+	margin: 0;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.cajafooter{
+	background-color:#f1f1f1;
+	display: flex; 
+	padding: 0 20px;
+	justify-content:space-between;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+}
+.cajafooter p{
+	margin: 10px 10px;
+} 
+.cajafooter img{
+	height: 20px;
+	width: 20px;
+}
+.edit{
+	display: flex;
+	align-items: center;
+}
+.start{
+	display: flex;
+	align-items: center;
+	color:#6564a5;
+}
+footer{
+	text-align: right; 
+	width: 80%;
+	margin: auto;
+	font-weight: bold;
+	text-transform: uppercase;
+}

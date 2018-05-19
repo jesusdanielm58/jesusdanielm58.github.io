@@ -2,10 +2,6 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	
-}
-svg:hover{
-	cursor: pointer;
 }
 button, input, select, textarea {
  font-family : inherit;
@@ -15,6 +11,12 @@ html{
 	width: 100%;
 	text-align:center; 
 	font-family: arial;
+}
+body{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column; 
+	align-items: center;
 }
 h1{text-transform: uppercase;}
 header{
@@ -29,13 +31,11 @@ header{
 	padding: 20px;
 	flex-wrap: wrap;
 	background-color:#273248;
-	
 }
 #menu img{
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	
 }
 nav{
 	display: flex;
@@ -50,9 +50,6 @@ nav a{
 	text-transform: uppercase;
 	margin: 0 10px;
 }
-nav a:hover{
-	background-color:red;
-}
 #showcase{
 	 background-image: url("../img/teclado.jpg"); 
 	 height: 90vh;
@@ -65,8 +62,7 @@ nav a:hover{
 	 align-items: center;
 	 justify-content: space-around;
 	 font-size: 5em;
-	 overflow: hidden;
-	 
+	 overflow: hidden;	 
 }
 .frase{
 	background-color:grey;
@@ -75,6 +71,7 @@ nav a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	width: 100%;
 }
 .sobremi{
 	padding: 20px;
@@ -127,6 +124,10 @@ form input[type=submit]{
 
 .cursos{
 	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
 }
 .cursos h1{
 	margin-top: 10px;
@@ -141,6 +142,7 @@ footer{
 	flex-wrap: wrap;
 	align-items: center;
 	height: 200px;
+	width: 100%;
 }
 footer nav{
 	text-align:justify; 
@@ -154,8 +156,10 @@ footer #logo{
 footer p{
 	margin-top: 10px;
 }
-footer svg{
+footer div a img{
 	margin:0 3px;
+	width:35px;
+	height: 35px;
 }
 footer hr{
 	flex: 0;
@@ -181,27 +185,47 @@ footer hr{
 .galeria img:hover{
 	box-shadow: 0 0 2px 1px rgba(0, 0, 100, 0.5);  
 }
-.galeriajs,.galeriajs div{
+.galeria a{
+	text-decoration:none;
+	color:black;
+}
+.galeriajs{
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: column;
 	display: none;
 	text-transform: capitalize;
-}
-.galeriajs{
 	margin-bottom: 20px;
-}
-.galeriajs img{
-	padding: 5px;
+	width: 100%;
+	overflow: hidden;
+	padding: 10px;
 }
 .galeriajs div{
+	align-items: center;
+	justify-content: space-between;
 	flex-direction: row;
+	display: none;
 }
-.galeriajs img{
+.galeriajs .slider{
 	border:1px solid;
 	height: 300px;
 	width: 300px;
 	margin:15px 10px;
+}
+.galeriajs .flecha{
+	width: 50px;
+	height: 50px;
+}
+.galeriajs button{
+	background: none;
+	outline: none;
+	border: none;
+}
+.galeriajs button:active{
+	color:red; 
+}
+.galeriajs button:hover{
+	cursor: pointer;
 }
 .certificados,.paginas{
 	display: flex;
@@ -225,13 +249,9 @@ footer hr{
 	}
 	#menu img{align:center;}
 	#showcase{font-size: 3em}
-	.galeriajs img{
+	.galeriajs .slider{
 		height: 200px;
 		width: 200px;
-	}
-	.galeriajs svg{
-		width: 40px;
-		height: 40px;
 	}
 	.contacto{
 		width: 80%;

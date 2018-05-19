@@ -1,0 +1,13 @@
+inico 
+*justificar elementos del navbar
+*ver manera correcta de alinear la imagen
+*imagen en un thombnail	
+
+reporte
+*arreglar select
+*arreglar margenes labels
+*arreglar el boton
+
+ingresar 
+*select
+*boton
