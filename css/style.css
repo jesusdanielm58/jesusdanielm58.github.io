@@ -7,16 +7,9 @@ button, input, select, textarea {
  font-family : inherit;
  font-size : 100%;
 }
-html{
-	width: 100%;
+body{
 	text-align:center; 
 	font-family: arial;
-}
-body{
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column; 
-	align-items: center;
 }
 h1{text-transform: uppercase;}
 header{
@@ -48,8 +41,9 @@ nav a{
 	text-decoration:none;
 	font-family: arial;
 	text-transform: uppercase;
-	margin: 0 10px;
+	padding: 10px;
 }
+nav a:hover{background-color:#304a7d }
 #showcase{
 	 background-image: url("../img/teclado.jpg"); 
 	 height: 90vh;
@@ -121,19 +115,10 @@ form input[type=submit]{
 	outline: none;
 	cursor: pointer;
 }
-
-.cursos{
-	margin-top: 20px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center; 
-}
 .cursos h1{
 	margin-top: 10px;
 	margin: 5px;
 }
-
 footer{
 	background-color: #273248;
 	color: white;
@@ -141,12 +126,15 @@ footer{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 200px;
+	height: 150px;
 	width: 100%;
 }
 footer nav{
 	text-align:justify; 
 	flex-direction: column;
+}
+footer nav a{
+	padding: 0 10px; 
 }
 footer #logo{
 	height: 100px;
@@ -171,6 +159,16 @@ footer hr{
 	align-items: center;
 	text-transform: capitalize;
 	margin-bottom: 10px;
+}
+.portafolio{
+	display: flex;
+	flex-wrap:nowrap;
+	align-items: flex-end;
+	align-self: flex-start;
+	overflow: auto;
+	width: 80%;
+	margin: auto;
+
 }
 .galeria{
 	margin: 20px;
@@ -246,6 +244,9 @@ footer hr{
 @media(max-width: 450px){
 	nav{
 		flex-direction: column;
+	}
+	nav a{
+		padding: 0 10px;
 	}
 	#menu img{align:center;}
 	#showcase{font-size: 3em}
