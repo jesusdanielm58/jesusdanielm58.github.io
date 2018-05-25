@@ -50,6 +50,16 @@
 				<p><b>pasantia</b></p></a>
 			</div>
 		</div>
+		<button onmouseover="mover()">mover</button>
 <div class="cursos" id="cursos">
+	<script type="text/javascript">
+		function mover(){
+			var e=document.querySelector(".portafolio")
+			e.scrollTop+=5;
+			e.scrollLeft+=5;
+			console.log(e.scrollTop,e.scrollLeft,e.atributes)
+		}
+
+	</script>
 </body>
 </html>

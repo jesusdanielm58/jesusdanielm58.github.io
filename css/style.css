@@ -70,8 +70,8 @@ nav a:hover{background-color:#304a7d }
 .sobremi{
 	padding: 20px;
 }
-.sobremi h1,.contacto h1{
-	margin-bottom: 10px;
+.sobremi h1,.contacto h1,.cursos h1{
+	margin: 10px 0;
 }
 .contacto{
 	width: 60%;
@@ -114,10 +114,7 @@ form input[type=submit]{
 	align-self: center;
 	outline: none;
 	cursor: pointer;
-}
-.cursos h1{
-	margin-top: 10px;
-	margin: 5px;
+
 }
 footer{
 	background-color: #273248;

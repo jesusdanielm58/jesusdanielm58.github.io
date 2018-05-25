@@ -163,3 +163,16 @@ footer{
 	font-weight: bold;
 	text-transform: uppercase;
 }
+#volver{
+	height: 50px;
+	width: 50px;
+	background-color:black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	border:1px solid black 
+	}
+#volver:hover{
+	opacity: 0.5;
+}
