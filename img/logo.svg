@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="-5.3125"
+     inkscape:cy="18.883166"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-page="true"
+     inkscape:snap-grids="false" />
+  <defs
+     id="defs45">
+    <font
+       horiz-adv-x="1024"
+       id="font3839"
+       inkscape:label="font 1">
+      <font-face
+         units-per-em="1024"
+         id="font-face3841"
+         font-family="SVGFont 1" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph3843" />
+    </font>
+  </defs>
+  <metadata
+     id="metadata48">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       style="fill:#1a1a1a"
+       id="rect87"
+       width="32.25"
+       height="32.125"
+       x="-0.125"
+       y="0.125" />
+    <rect
+       style="fill:#000000;stroke-width:2.19482255"
+       id="rect126"
+       width="39.689445"
+       height="45.494198"
+       x="-16.563704"
+       y="-18.517828"
+       transform="matrix(0.82151088,0.57019284,-0.70888161,0.70532749,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.68510056px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:'Algerian Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:3.69099069"
+       x="-0.31619433"
+       y="19.038843"
+       id="text3833"
+       transform="matrix(1.345471,-0.01029827,0.0056884,0.74319061,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3831"
+         x="-0.31619433"
+         y="19.038843"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.68510056px;font-family:Algerian;-inkscape-font-specification:'Algerian Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:3.69099069">J</tspan><tspan
+         sodipodi:role="line"
+         x="-0.31619433"
+         y="43.645222"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.68510056px;font-family:Algerian;-inkscape-font-specification:'Algerian Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:3.69099069"
+         id="tspan3845" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.96141243px;line-height:1.25;font-family:Algerian;-inkscape-font-specification:Algerian;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:2.99276471"
+       x="16.906719"
+       y="29.562044"
+       id="text3837"
+       transform="scale(1.0418341,0.9598457)"><tspan
+         sodipodi:role="line"
+         id="tspan3835"
+         x="16.906719"
+         y="29.562044"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Algerian;-inkscape-font-specification:Algerian;stroke-width:2.99276471">M</tspan></text>
+  </g>
+</svg>

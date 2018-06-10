@@ -28,7 +28,7 @@ header{
 #menu img{
 	height: 50px;
 	width: 50px;
-	border-radius: 50%;
+
 }
 nav{
 	display: flex;
@@ -60,18 +60,22 @@ nav a:hover{background-color:#304a7d }
 }
 .frase{
 	background-color:grey;
-	color:white;
+	color:black;
 	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
+	flex-flow: column;
+}
+.frase p{
+	font-weight: bold;
 }
 .sobremi{
 	padding: 20px;
 }
-.sobremi h1,.contacto h1,.cursos h1{
-	margin: 10px 0;
+.frase, .contacto h1{
+	margin-bottom: 15px;
 }
 .contacto{
 	width: 60%;
@@ -120,7 +124,7 @@ footer{
 	background-color: #273248;
 	color: white;
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
 	height: 150px;
@@ -136,7 +140,7 @@ footer nav a{
 footer #logo{
 	height: 100px;
 	width: 100px;
-	border-radius: 50%;
+	
 }
 footer p{
 	margin-top: 10px;
@@ -156,6 +160,8 @@ footer hr{
 	align-items: center;
 	text-transform: capitalize;
 	margin-bottom: 10px;
+	width: 80%;
+	margin: auto;
 }
 .portafolio{
 	display: flex;
@@ -165,6 +171,8 @@ footer hr{
 	overflow: auto;
 	width: 80%;
 	margin: auto;
+	transition-property: scroll-left;
+	transition-duration: 2s;
 
 }
 .galeria{
@@ -251,6 +259,10 @@ footer hr{
 		height: 200px;
 		width: 200px;
 	}
+	.galeriajs .flecha{
+		width: 40px;
+		height: 40px;
+	}
 	.contacto{
 		width: 80%;
 	}
@@ -263,9 +275,10 @@ footer hr{
 	form input[type=text],textarea{
 		margin-left: 0;
 	}
-	.gallery{display: none}
-	.galeriajs,.galeriajs div{display: flex;}
-}
-@media(max-width: 840px){
 
+}
+@media(max-width: 710px){
+		.gallery{display: none}
+	.galeriajs,.galeriajs div{display: flex;}
+	.cursos{width: 100%}
 }

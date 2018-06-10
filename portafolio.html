@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"">
+	<title>cursos</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+		<header>
+			<div id="menu">
+				<img id ="logo" src="img/logo.png">
+				<nav>
+					<a href="index.html">incio</a>
+					<a href="index.html#contacto">sobre mi</a>
+					<a href="#contacto">contacto</a>
+					<a href="cursos.html">Cursos</a>
+				</nav>	
+			</div>
+		</header>
+				<h1>portafolio</h1>
+		<p>algunas paginas que he hecho</p>
+				<div class="portafolio">
+			<div class="galeria">
+				<a href="paginas_web/poscosecha/index.html"><img src="img/poscosechamin.png" alt="sql" draggable="false">
+				<p><b>poscosecha</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/Landing_page_imagen_central/index.html"><img src="img/landingfullmin.png" alt="sql" draggable="false"><p><b>landing page</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/pasantia/ingresar.html"><img src="img/pasantiamin.png" alt="sql" draggable="false">
+				<p><b>pasantia</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/questy/index.html"><img src="img/questymin.png" alt="sql" draggable="false"><p><b>questy</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/poscosecha/service.html"><img src="img/templatemin.png" alt="sql" draggable="false">
+				<p><b>template</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/poscosecha/index.html"><img src="img/poscosechamin.png" alt="sql" draggable="false">
+				<p><b>poscosecha</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/Landing_page_imagen_central/index.html"><img src="img/landingfullmin.png" alt="sql" draggable="false"><p><b>landing page</b></p></a>
+			</div>
+			<div class="galeria">
+				<a href="paginas_web/pasantia/ingresar.html"><img src="img/pasantiamin.png" alt="sql" draggable="false">
+				<p><b>pasantia</b></p></a>
+			</div>
+		</div>
+		<button onclick="mover(1)">mover</button>
+		<button onclick="mover(-1)">atras</button>
+<div class="cursos" id="cursos">
+	<script type="text/javascript">
+		function mover(dir){
+			var e=document.querySelector(".portafolio")
+			e.scrollLeft+=window.innerWidth*0.8*dir;
+			console.log(e.scrollTop,e.scrollLeft,e.style)
+		}
+
+	</script>
+</body>
+</html>
+
