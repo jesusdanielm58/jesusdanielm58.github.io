@@ -59,23 +59,27 @@ nav a:hover{background-color:#304a7d }
 	 overflow: hidden;	 
 }
 .frase{
-	background-color:grey;
 	color:black;
-	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 100%;
-	flex-flow: column;
+	width: 90%;
+	margin: 12px auto;
 }
 .frase p{
 	font-weight: bold;
 }
+.frase hr{
+	flex:1;
+	border: 1px solid;
+	border-color:#3a3232;
+ 
+}
+.frase h1{
+	margin: 7px;
+}
 .sobremi{
 	padding: 20px;
-}
-.frase, .contacto h1{
-	margin-bottom: 15px;
 }
 .contacto{
 	width: 60%;
@@ -83,7 +87,7 @@ nav a:hover{background-color:#304a7d }
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 auto;
+	margin: auto;
 }
 form{
 	width: 100%;
@@ -174,6 +178,10 @@ footer hr{
 	transition-property: scroll-left;
 	transition-duration: 2s;
 
+}
+.carousel.item img{
+	width: 200px;
+	height: 200px;
 }
 .galeria{
 	margin: 20px;
@@ -281,4 +289,5 @@ footer hr{
 		.gallery{display: none}
 	.galeriajs,.galeriajs div{display: flex;}
 	.cursos{width: 100%}
+	.frase hr{display: none}
 }
