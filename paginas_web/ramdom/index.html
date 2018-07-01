@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.todo{
+			text-align: center;
+			background-color: #f6f7fd
+		}
+		.todo{
+			width: 100%;
+			display: flex;
+			flex-flow: column;
+			align-items: flex-end;
+			font-size: 18px;
+		}
+		.main{
+			width: 80%;
+			display: flex;
+			flex-flow:column;
+			height: 100%;
+			flex: 1;
+			padding: 15px;
+		}
+		header{
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			align-items: center;
+		}
+		header img{
+			width: 50px;
+			height: 50px;
+		}
+		.doble{
+			display: flex;
+			margin: 20px 0;
+		}
+		.mitad{
+			flex:1;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.mitad h1{
+			margin-bottom: 15px;
+		}
+		section {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		section img{
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			margin: 15px 0;
+
+		}
+		section .caja{
+			width: 30%;
+			padding: 10px;
+		}
+		.caja h3{
+			margin-bottom: 10px;
+		}
+		.menu{
+			position: fixed;
+			background-color: grey;
+			height: 100vh;
+			width: 20%;
+			padding: 20px;
+			font-size: 22px;
+			font-family: arial
+		}
+		.menu nav{
+			display: flex;
+			flex-flow: column;
+		}
+		nav a{
+			text-decoration: none;
+			color: white;
+			margin-top: 15px;
+			border-top: 1px solid white 
+		}
+		.doble, section{
+			background-color: white;
+			border-radius: 12px;
+			box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0,32,128,.1), 0 0 0 1px #f0f2f7
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<nav>
+			<p><b>Menu</b></p>
+			<a href="">Enlace</a>
+			<a href="">Enlace</a>
+			<a href="">Enlace</a>
+			<a href="">Enlace</a>
+		</nav>
+	</div>
+	
+	<div class="todo">	
+		<div class="main">
+			<header>
+				<img src="img/logo.png">
+				<p>nombre compañia</p>
+			</header>
+			<div class="doble">
+				<div class="mitad">
+					<div>
+					<h1>lorem ipsu dolor</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="mitad">
+					<img src="img/img.png">
+				</div>
+				
+			</div>
+			<section id="columnas">
+				<div class="caja">
+					<img src="img/img.png">
+					<h3>Dolor</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+				</div>
+				<div class="caja">
+					<img src="img/img.png">
+					<h3>Ipsu</h3>
+					<p>Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+				</div>
+				<div class="caja">
+					<img src="img/img.png">
+					<h3>Lorem</h3>
+					<p>consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+				</div>
+		</section>
+	</div>
+		</div>
+
+</body>
+</html>
