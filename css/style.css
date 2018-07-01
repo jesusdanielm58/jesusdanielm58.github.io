@@ -1,0 +1,289 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+button, input, select, textarea {
+ font-family : inherit;
+ font-size : 100%;
+}
+body{
+	text-align:center; 
+	font-family: arial;
+}
+h1{text-transform: uppercase;}
+header{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	background-color:#273248;
+}
+#menu img{
+	height: 50px;
+	width: 50px;
+
+}
+nav{
+	display: flex;
+	flex-basis:  1;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	font-family: arial;
+	text-transform: uppercase;
+	padding: 10px;
+}
+nav a:hover{background-color:#304a7d }
+#showcase{
+	 background-image: url("../img/teclado.jpg"); 
+	 height: 90vh;
+	 width: 100%;
+	 background-size:  cover; 
+	 background-position:center;
+	 color:white;
+	 text-shadow:0 0 20px black;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-around;
+	 font-size: 5em;
+	 overflow: hidden;	 
+}
+.frase{
+	color:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 90%;
+	margin: 12px auto;
+}
+.frase p{
+	font-weight: bold;
+}
+.frase hr{
+	flex:1;
+	border: 1px solid;
+	border-color:#3a3232;
+ 
+}
+.frase h1{
+	margin: 7px;
+}
+
+.contacto{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+}
+form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+form input[type=text],textarea{
+	height: 40px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	flex:1;
+	padding: 5px;
+	border-color:#ebebeb;
+	border-style: solid;
+	border-radius: 5px;
+	outline: none;
+	border-width: 2px;
+}
+form input[type=text]:focus,textarea:focus{
+	border-color:#00000061;
+}
+textarea{
+	height: 90px;
+	resize: none;
+}
+form input[type=submit]{
+	margin: 20px 0px;
+	border-radius: 10px;
+	width: 120px;
+	height: 30px;
+	align-self: center;
+	outline: none;
+	cursor: pointer;
+
+}
+footer{
+	background-color: #273248;
+	color: white;
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 150px;
+	width: 100%;
+}
+footer nav{
+	text-align:justify; 
+	flex-direction: column;
+}
+footer nav a{
+	padding: 0 10px; 
+}
+footer #logo{
+	height: 100px;
+	width: 100px;
+	
+}
+footer p{
+	margin-top: 10px;
+}
+footer div a img{
+	margin:0 3px;
+	width:35px;
+	height: 35px;
+}
+footer hr{
+	flex: 0;
+}
+.gallery{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	width: 80%;
+	margin: auto;
+}
+.portafolio{
+	display: flex;
+	flex-wrap:nowrap;
+	align-items: flex-end;
+	align-self: flex-start;
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	transition-property: scroll-left;
+	transition-duration: 5s;
+	flex-flow:row;
+
+}
+
+.galeria{
+	margin: 20px;
+	flex:1;
+}
+.galeria img{
+	border:1px solid black;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+.galeria img:hover{
+	box-shadow: 0 0 2px 1px rgba(0, 0, 100, 0.5);  
+}
+.galeria a{
+	text-decoration:none;
+	color:black;
+}
+.galeriajs{
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	display: none;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	width: 100%;
+	overflow: hidden;
+	padding: 10px;
+}
+.galeriajs div{
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	display: none;
+}
+.galeriajs .slider{
+	border:1px solid;
+	height: 300px;
+	width: 300px;
+	margin:15px 10px;
+}
+.galeriajs .flecha{
+	width: 50px;
+	height: 50px;
+}
+.galeriajs button{
+	background: none;
+	outline: none;
+	border: none;
+}
+.galeriajs button:active{
+	color:red; 
+}
+.galeriajs button:hover{
+	cursor: pointer;
+}
+.certificados,.paginas{
+	display: flex;
+	flex-wrap: nowrap;
+}
+@media(max-width: 320px){
+	#menu{
+		flex-direction: column;
+	}
+	#menu img{
+		align:center;
+		margin-bottom: 10px;
+	}
+	footer img{
+		margin-top: 10px;
+	}
+}
+@media(max-width: 450px){
+	nav{
+		flex-direction: column;
+	}
+	nav a{
+		padding: 0 10px;
+	}
+	#menu img{align:center;}
+	#showcase{font-size: 3em}
+	.galeriajs .slider{
+		height: 200px;
+		width: 200px;
+	}
+	.galeriajs .flecha{
+		width: 40px;
+		height: 40px;
+	}
+	.contacto{
+		width: 80%;
+	}
+}
+@media(max-width: 580px){
+	footer{
+		height: 250px;
+	}
+	footer hr{display: none}
+	form input[type=text],textarea{
+		margin-left: 0;
+	}
+
+}
+@media(max-width: 710px){
+		.gallery{display: none}
+	.galeriajs,.galeriajs div{display: flex;}
+	.cursos{width: 100%}
+	.frase hr{display: none}
+}
