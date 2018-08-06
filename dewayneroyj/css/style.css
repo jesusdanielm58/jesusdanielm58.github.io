@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Light;
+    src: url(../fonts/718-Light.woff);
+}
+@font-face {
+    font-family: SangBleuEmpire;
+    src: url(../fonts/SangBleuEmpire-Regular-WebXL.woff);
+}
+body{
+    background-color: #101010;
+    color: #dcdcdc;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+a{
+    color: #dcdcdc;
+    text-decoration: none;
+    font-size:16px;
+    font-family: "Light";
+    opacity: 0.6;
+}
+.maintext{
+    font-size:2rem;
+    font-weight: 100;
+    line-height: 4rem;
+    font-family: "SangBleuEmpire";
+    transition: .725s ease opacity;
+    margin: 35vh 8% 0 8%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 10% 0 0 8%;
+}
+li{
+    display: inline;
+    padding: 10px 30px 10px 0
+}
+.main{
+    display: flex;
+    font-size:calc(8px + (20 - 8)*(100vw - 375px)/ (1920 - 375)); 
+    flex-flow: column;
+}
+.cursor{
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    transition: 0s  height,.0s  width,.250s  ease transform;
+}
+.cursor-follower{
+    position: absolute;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(128,128,128,.3);
+    transition: .750s  ease,.3s cubic-bezier(.75,-1.27,.3,2.33) transform,.2s cubic-bezier(.75,-.27,.3,1.33) opacity;
+    transform: scale(1);
+}
+.nave{
+    animation: .2s ease infinite spaceshake;
+    display:inline-block;
+}
+@-webkit-keyframes spaceshake{
+    0%{
+        -webkit-transform:rotate(0);
+        transform:rotate(0)
+    }
+    25%{
+        -webkit-transform:rotate(-8deg);
+        transform:rotate(-8deg)
+    }
+    75%{
+        -webkit-transform:rotate(8deg);
+        transform:rotate(8deg)
+    }
+    100%{
+        -webkit-transform:rotate(0);
+        transform:rotate(0)
+    }
+}
