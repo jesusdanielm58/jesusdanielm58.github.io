@@ -16,12 +16,12 @@ body{
 a{
     color: #dcdcdc;
     text-decoration: none;
-    font-size:16px;
+    font-size:1em;
     font-family: "Light";
     opacity: 0.6;
 }
 .maintext{
-    font-size:2rem;
+    font-size:2em;
     font-weight: 100;
     line-height: 4rem;
     font-family: "SangBleuEmpire";
@@ -79,5 +79,14 @@ li{
     100%{
         -webkit-transform:rotate(0);
         transform:rotate(0)
+    }
+}
+@media(max-width: 600px){
+    .maintext{
+         margin: 10vh 8% 0 8%;
+         line-height: 31px;
+    }
+    a,.nave{
+        font-size:16px;
     }
 }
