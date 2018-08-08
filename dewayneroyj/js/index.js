@@ -3,12 +3,14 @@ function enter(){
 		parrafo.style.opacity="0.1";
 		circle.style.transform="scale(0)";
 		circle2.style.transform="scale(3)";
+		circle2.classList.add("activo");
 	}
 }
 function out(){
 	circle.style.transform="scale(1)";
 	parrafo.style.opacity="1";
-	circle2.style.transform="scale(1)"
+	circle2.style.transform="scale(1)";
+	circle2.classList.remove("activo");
 }
 window.addEventListener("mousemove",function(e){
 	if(window,innerWidth>830){
