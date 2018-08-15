@@ -53,7 +53,7 @@ nav a:hover{background-color:#304a7d }
 	 color:white;
 	 text-shadow:0 0 20px black;
 	 display: flex;
-	 align-items: flex-start;
+	 align-items: center;
 	 justify-content: space-around;
 	 font-size: 5em;
 	 overflow: hidden;	 
