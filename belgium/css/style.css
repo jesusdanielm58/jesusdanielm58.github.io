@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+/*menu*/
+	.menu{
+		display: flex;
+		color:#422500;
+		background-color: rgba(255,255,255,0.7);
+		width: 100%;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.menu a{
+		color: #422500;
+		text-decoration:none;
+		text-transform: uppercase;
+		font-family: arial;
+		font-weight: 900;
+	 	white-space: nowrap;
+	}
+	.menu div{
+		text-align: center;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 10%;
+	}
+	.menu div:hover{
+		background-color: rgba(255,255,255,0.75);
+	}
+	.dropdown{
+		position: relative;
+	}
+	.dropdowncontent{
+		display: none;
+	    position: absolute;
+	    z-index: 1;
+	    width: 100%;
+	    background-color: rgba(255,255,255,0.7);
+	}
+	.dropdowncontent a{
+		margin-top:5px; 
+		padding-top: 5px;
+	}
+	.dropdown:hover .dropdowncontent {
+	    display: block!important;
+	}
+	.long{
+		flex-basis: 15%!important;
+	}
+	.menu div img{
+		width: 70%;
+	}
+	.logo{
+		height: 30px;
+		width:auto;
+		margin-right: auto;
+	}
+/*dranken*/
+	.dranken{
+		width: 100%;
+		padding-top: 30px;
+	}
+	.sliderinfo{
+		width: 70%;
+		background-color:#422500;
+		position: relative;
+		height: 250px;
+		margin: auto;
+		color: white;
+		padding: 30px 40px 0 40px;
+	}
+	.sliderinfo img{
+		position: relative;
+		left: 90%;
+	}
+	.sliderinfo .btn{
+		padding: 10px 40px;
+		position: relative;
+		top:calc(100% - 20px);
+		left:calc(50% - 80px);
+		white-space: nowrap;
+	}
+	.animar{
+		animation-name: cambiar;
+		animation-duration: 0.7s;
+		animation-timing-function: (0.1, 0.7, 1.0, 0.1);
+		animation-iteration-count: 1;
+	}
+
+	.sliderinfo .derecha{
+		position: absolute;
+		left: -48px;
+		top: -42px;
+		width: 80px;
+		height: 130%;
+	}.sliderinfo .izquierda{
+		position: absolute;
+		left: calc(100% - 48px);
+		top: -42px;
+		width: 80px;
+		height: 130%;
+		transform: rotateY(180deg);
+	}
+	.between{
+		display: flex;
+		justify-content: space-between;
+	}
+	#carousel img {
+	height: 200px;
+	visibility:hidden;
+	cursor:pointer;
+	border:1px solid black;
+	}
+	.control{
+		margin: auto;
+		text-align: center;
+	}
+	#carousel {
+		width:100%;
+		margin: auto;
+		height:250px;
+		clear:both;
+		overflow:hidden;
+		background:#FFF;
+	}
+.brouwen{
+	height: 700px;
+	background-color:#422500;
+	color: white; 
+	padding-top: 30px;
+	background-image: url("../img/side.png");
+	background-repeat: no-repeat;
+	background-position:right bottom;
+	margin-top:60px; 
+}
+.brouwen img{
+	float: right;
+}
+h1{
+	margin-left: 80px;
+	display: inline-block;
+	border-bottom:2px solid;
+	padding-right: 20px;
+	font-size:1.5em; 
+	margin-bottom: 30px; 
+}
+.brouwen p{
+	margin: 20px 0 20px 140px;
+	max-width:600px;
+}
+.especial{
+	font-size:1.5em;
+	font-weight: 100; 
+}
+.btn{
+	background-color: #20a63f;
+	border-radius: 20px;
+	padding: 5px 10px;
+	color: white!important;
+	border: none;
+}
+.nieuws{
+	height: 500px;
+	padding-top:30px;
+	margin: auto;
+}
+.nieuws .sliderinfo{
+	width: 60%;
+	margin: auto;
+}
+.nieuws h1{
+	margin-bottom: 80px;
+}
+.dot {
+  height: 17px;
+  width: 17px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom:40px;
+}
+.darkdot{
+	background-color: #444;
+}
+footer{
+	height: 400px;
+	background-color: #422500;
+	color:white;
+	padding-top: 30px;
+}
+.boxcontainer{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin:auto;
+
+}
+.box{
+	display: flex;
+	flex-flow: column;
+	flex:1;
+}
+.box img{
+	height: 250px;
+	width: 60px;
+}
+.box h2,p{
+	margin-bottom:20px; 
+}
+p{
+	opacity: 0.8;
+}
+h3{
+	font-weight: normal;
+}
+form{
+	display: flex;
+	flex-flow: column;
+	flex:1;
+}
+form input,textarea{
+	background-color: transparent;
+	border:2px solid rgba(255,255,255,0.7);
+	margin: 5px;
+	padding:10px;
+	outline: none;
+}
+form .btn{
+	width: 150px;
+	margin-left:  auto;
+	border:none;
+}
+textarea{
+	height: 130px;
+	resize: none;
+}
+.doble{
+	flex:2;
+	flex-flow: row;
+}
+@keyframes cambiar{
+	0%{width: 70%;}
+	50%{width: 5%;color:transparent;}
+	100%{width: 70%} 
+}
