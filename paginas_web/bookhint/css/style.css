@@ -9,7 +9,7 @@ body{
 header{
 	width: 100%;
 	font-family:  arial;
-	background-image: url("../../imagenes-sin-copy/costa2.jpg");
+	background-image: url("../img/fondo.jpg");
 	background-size: 100% 100%;
 	min-height: 500px;
 }
