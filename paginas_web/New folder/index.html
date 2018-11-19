@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		button, input, select, textarea {
+			font-family : inherit;
+			font-size : 100%;
+		}
+		@font-face {
+		    font-family: lato;
+		    src: url(lato1.woff2);
+		}
+		body{
+			background-color: #ebf0f6;
+			background-image:url("img/fondo.png");
+			background-size: cover;
+		}
+		header{
+			padding: 0 10%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			background-color: rgba(114, 136, 142, 0.8) !important;
+			height: 60px;
+			font-family: 'lato', Arial, Geneva, Helvetica, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		header img{
+			margin-right: auto;
+		}
+		header a{
+			text-decoration: none;
+			color:white;
+			border-radius: 2px;
+			padding: 8px 10px;
+			margin-left: 16px;
+			position: relative;
+		}
+		header a img{
+			position: absolute;
+			left: 50%;
+		}
+		header a:hover{
+			background-color: rgba(33, 47, 63, 0.3);
+			
+		}
+	.dropdown{
+		position: relative;
+	}
+	.dropdowncontent{
+		display: none;
+	    position: absolute;
+	    z-index: 1;
+	    width: 130px;
+	    height: 120px;
+	    background-color: white;
+	    top: 25px;
+	    box-shadow:10px 17.3px 50px rgba(2, 1, 2, 0.15)
+	}
+	.dropdowncontent a{
+		margin-top:5px; 
+		padding-top: 5px;
+		width: 100%;
+	}
+	.dropdown:hover .dropdowncontent {
+	    display: block!important;
+	}
+		.login{
+			background-color: #649a99;
+		}
+		.contact{
+			background-color: white;
+			width: 60%;
+			margin: auto;
+			margin-top: 80px;
+			margin-bottom: 80px;
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			box-shadow: 10px 17px 30px rgba(85, 194, 191, 0.2);
+			background-image: url("img/contactfondo.png");
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: 100%;
+			padding-bottom: 80px;
+			border-radius: 10px;
+			font-family: verdana;
+		}
+		.contact h1{
+			width: 100%;
+			border-bottom: 1px solid #dadde1;
+			text-align: center;
+			padding: 20px;
+			margin-bottom: 40px;
+			text-transform: capitalize;
+			font-weight: 400;
+		}
+		form{
+			width: 100%;
+			padding: 0 10%;
+			display: flex;
+			flex-flow: column;
+		}
+		input,textarea{
+			height: 50px;
+			border:1px solid #dadde1;
+			padding-left:20px;
+			outline:none;
+			margin-bottom: 30px;
+		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #c3cad7;
+		}
+		textarea{
+			resize: none;
+			height: 100px;
+			padding-top: 10px;
+		}
+		input[type="submit"]{
+			padding: 0;
+			background-color: #90b72e;
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-family: arial;
+			width:60%;
+			margin: auto;		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png">
+		<div class="dropdown">
+			<a href="#">company <img src="img/triangle.png"></a>
+			<div class="dropdowncontent">
+				<a href="#">Bier</a>
+			</div>
+		</div>
+		<a href="#">plataform</a>
+		<a href="#">prices</a>
+		<a href="#">buyers program</a>
+		<a href="#">news</a>
+		<a href="#" class="login">login</a>
+	</header>
+	<div class="contact">
+		<h1>contact</h1>
+		<form>
+			<input type="text" name="" placeholder="Name">
+			<input type="texr" name="" placeholder="Email">
+			<textarea placeholder="Message"></textarea>
+			<input type="submit" name="" value="send">
+		</form>
+
+	</div>
+</body>
+</html>
