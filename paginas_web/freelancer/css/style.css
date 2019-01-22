@@ -111,8 +111,11 @@ header input{
 
 }
 .main img{
-	width: 100%;
+
+	max-width: 100%;
+	max-height: auto;
 	margin-bottom: 20px;
+	object-fit: contain;
 }
 .main p{
 	margin-bottom: 20px;
@@ -123,10 +126,15 @@ header input{
 }
 .main .dividido{
 	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
 	margin-bottom: 10px;
 }
 .main .dividido div{
 	margin-left: 10px;
+	flex:3; 
+	min-width: 300px;
 }
 .main .video{
 	display: flex;
@@ -140,6 +148,7 @@ header input{
 }
 .main .pagination{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 30px;
 }
@@ -216,6 +225,9 @@ header input{
 	font-size: 0;
 	text-transform: capitalize;
 }
+.box{
+	min-width: 275px;
+}
 .box p{
 	letter-spacing: -1px;
 }
@@ -270,6 +282,7 @@ header input{
 .boxes{
 	padding: 10px 5%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	font-size: 0;
 }
@@ -280,6 +293,7 @@ footer{
 	background-color: #191919;
 	color: white;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 15px 5%; 
 }
 footer select{
@@ -303,10 +317,31 @@ footer img{
 	margin-left: auto;
 }
 
-
+footer,.sidebar,.similar,{
+	display: none!important;
+}
 
 @media(max-width:952px){
 	.sidebar{
 		display: none;
+	}
+	.pagination button{
+		padding: 5px 10px;
+	}
+}
+@media(max-width:514px){
+	.discusion input{
+		width: 300px;
+	}
+	header input{
+		width: 300px;
+	}
+}
+@media(max-width:400px){
+	.discusion input{
+		width: 200px;
+	}
+	.pagination button{
+		padding: 5px 5px;
 	}
 }
