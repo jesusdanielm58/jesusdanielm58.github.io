@@ -22,6 +22,7 @@ header div p{
 	font-size: 30px;
 	font-weight: bolder;
 	text-transform: uppercase;
+	letter-spacing: -1px;
 }
 header img{
 	margin-right: auto;
@@ -31,6 +32,7 @@ header .left{
 }
 header p{
 	margin-right: auto;
+	letter-spacing: -1px;
 }
 header a{
 	text-decoration:none;
@@ -78,15 +80,18 @@ header input{
 .title h1{
 	font-size: 1.5rem;
 	font-weight: 500;
+	letter-spacing: -1px;
 }
 .title p{
 	font-weight: bold;
 	font-size: 0.9em;
+	letter-spacing: -1px;
 }
 .title a{
 	text-decoration: none;
 	color: black;
 	margin:0 5px; 
+	letter-spacing: -1px;
 }
 .title .active{
 	color: #ee2b31;
@@ -123,6 +128,7 @@ header input{
 }
 .main h2{
 	margin-bottom: 10px;
+	letter-spacing: -1px;
 }
 .main .dividido{
 	display: flex;
@@ -161,6 +167,8 @@ header input{
 	outline: none;
 	text-transform: uppercase;
 	background-color: #f1f1f1;
+	letter-spacing: -1px;
+	cursor: pointer;
 }
 .home{
 	border-radius: 7px;
@@ -170,6 +178,11 @@ header input{
 }
 .ultimo{
 	border-radius: 0 7px 7px 0!important;
+}
+.centrada{
+	justify-content:center!important;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
@@ -206,6 +219,7 @@ header input{
 
 .discusion{
 	display: flex;
+	align-items: flex-start;
 }
 .discusion img{
 	width: 47px;
@@ -217,8 +231,81 @@ header input{
 	border:2px solid #00000044;
 	padding-left: 20px;
 	height: 47px;
-	width: 400px;
+	flex:1;
+	outline: none;
+	margin-bottom: 5px;
 }
+.discusion .name{
+	height: 40px!important;
+}
+.discusion div div{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	letter-spacing: -1px;
+}
+.discusion div div div{
+	display: flex;
+	flex-flow: column;
+}
+.discusion div div div div{
+	flex-flow: row;
+}
+.discusion div div div img{
+	margin-right: 4px;
+	width: 35px;
+	height: 35px;
+}
+.discusion .disqus{
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+}
+.discusion p{
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+
+
+.comments {
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 20px; 
+}
+.comments img{
+	margin-right: 20px;
+}
+.comments div{
+	display: flex;
+	flex-flow: column;
+}
+.comments div img{
+	margin:7px 3px;
+}
+.comments div div{
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+}
+.comments span{
+	color: #3062a7;
+}
+.comments .date{
+	color:#646e7a;
+}
+.comments p{
+	margin-bottom: 5px;
+}
+.comments .options img{
+	margin-left: 5px;
+	margin-right: 6px;
+}
+.reply{
+	margin-left: 60px;
+}
+
 
 .sidebar{
 	flex: 1;
@@ -267,6 +354,13 @@ header input{
 .box span{
 	color:#ef2a33;
 }
+.activebox{
+	background-color: #333333!important;
+	color: #616161!important;
+}
+.activebox hr{
+	opacity: 0.5;
+}
 
 
 
@@ -287,7 +381,7 @@ header input{
 	font-size: 0;
 }
 .boxes .box > div{
-	color: #4a4a4a!important;
+	color: #4a4a4a;
 }
 footer{
 	background-color: #191919;
@@ -321,6 +415,194 @@ footer,.sidebar,.similar,{
 	display: none!important;
 }
 
+
+
+.content{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	background-color: #f6f6f6;
+	padding: 50px 5%;
+	font-family: verdana;
+	text-transform: capitalize;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.content div{
+	padding:0 20px 0 20px;
+	flex:1;
+}
+.content h1{
+	letter-spacing: -1px;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+.content span{
+	color: #ef2a33;
+	font-weight: bold; 
+}
+.content div div{
+	display: flex;
+}
+.content hr{
+	opacity: 0.5;
+	margin:10px 0;
+}
+.content button{
+	background-color:  #ef2a33;
+	border-radius: 20px;
+	border:none;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	color: white;
+	text-transform: capitalize;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.content button img{
+	margin-right: 10px;
+}
+.content .contentimg{
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+.rating{
+	padding:0!important;
+}
+
+
+
+
+
+.chat{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	align-items: center;
+	font-family: verdana;
+}
+.chat img{
+	margin-right: 20px;
+}
+.chatc{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 5%;
+	margin-bottom: 150px;
+}
+.chatn{
+	flex:1;
+	min-width: 210px;
+}
+.chatnn {
+	display: flex;
+	align-items: flex-start;
+	padding-bottom: 20px; 
+	padding-right: 35px;
+	min-width: 125px;
+}
+.chatnn img{
+	margin-right: 10px;
+}
+.chatnn div{
+	display: flex;
+	flex-flow: column;
+	flex:1;
+}
+.chatnn div div{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.chatnn span{
+	font-weight: bold; 
+	font-size: 1.3rem;
+}
+.chatnn .date{
+	color:#646e7a;
+}
+.chatnn p{
+	letter-spacing: -1px;
+}
+.chatnn button{
+	background-color:  #ef2a33;
+	border:none;
+	padding: 5px 5px;
+	color: white;
+	text-transform: capitalize;
+
+}
+
+
+
+.chatm{
+	flex:3;
+	font-family: verdana;
+}
+.chatmtitle{
+	color: #ef2a33;
+	display: flex;
+	align-items: flex-start;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+.chatmtitle img{
+	margin-right: 20px;
+}
+
+.chatmmain{
+	flex: 1;
+	border: 1px solid black;
+	padding: 30px 15px 20px 15px;
+}
+.mainmessage{
+	display: flex;
+	border-bottom: 1px solid #00000055;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.mainmessage div{
+	margin-right: 20px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.mainmessage img{
+	margin-right: 20px;
+	width: 81px;
+	height: 81px;
+}
+.mainmessage span{
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.chatm textarea{
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+	height: 100px;
+	resize: none;
+}
+.chatm button{
+	background-color:  #ef2a33;
+	border-radius: 20px;
+	border:none;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	color: white;
+	text-transform: capitalize;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.chatm button img{
+	margin-right: 10px;
+}
+
+
+
+
 @media(max-width:952px){
 	.sidebar{
 		display: none;
@@ -330,17 +612,17 @@ footer,.sidebar,.similar,{
 	}
 }
 @media(max-width:514px){
-	.discusion input{
+/*	.discusion input{
 		width: 300px;
-	}
+	}*/
 	header input{
 		width: 300px;
 	}
 }
 @media(max-width:400px){
-	.discusion input{
+/*	.discusion input{
 		width: 200px;
-	}
+	}*/
 	.pagination button{
 		padding: 5px 5px;
 	}
