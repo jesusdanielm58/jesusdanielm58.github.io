@@ -94,7 +94,7 @@ header .sb{
 	text-decoration: none;
 	color: black;
 	margin:0 5px; 
-	letter-spacing: -1px;
+	letter-spacing: 0;
 }
 .title .active{
 	color: #ee2b31;
@@ -128,6 +128,8 @@ header .sb{
 .main p{
 	margin-bottom: 20px;
 	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	opacity: 0.7;
 }
 .main h2{
 	margin-bottom: 10px;
