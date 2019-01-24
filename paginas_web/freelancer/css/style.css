@@ -30,18 +30,14 @@ header img{
 header .left{
 	margin-right: 20px;
 }
-header p{
-	margin-right: auto;
-	letter-spacing: -1px;
-}
 header a{
 	text-decoration:none;
 	color:black;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	padding: 10px 15px;
-	font-size:1rem;
+	font-size:1em;
 }
 header button{
 	background-color: #ee2b31;
@@ -60,12 +56,9 @@ header input{
 	padding-left: 10px;
 	outline: none;
 	border-color: #00000088;
-}
-header .sb{
-	font-weight: bolder;
-}
-.logop{
-	font-family: verdana;
+	font-weight: 600;
+	font-size: 0.95rem;
+	text-transform: capitalize;
 }
 
 
@@ -396,7 +389,7 @@ footer select{
 	background-color: transparent;
 	color:white;
 	border:none;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
 	border-right: 1px solid white;
@@ -406,7 +399,7 @@ footer select{
 footer a{
 	color: white;
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	margin-right: 10px;
@@ -521,7 +514,7 @@ footer,.sidebar,.similar,{
 	justify-content: space-between;
 }
 .chatnn span{
-	font-weight: bold; 
+	font-weight: 900; 
 	font-size: 1.2rem;
 }
 .chatnn .date{
@@ -529,7 +522,7 @@ footer,.sidebar,.similar,{
 	font-weight: 600;
 }
 .chatnn p{
-	letter-spacing: -1px;
+	letter-spacing: -0.05em;
 }
 .chatnn button{
 	background-color:  #ef2a33;
