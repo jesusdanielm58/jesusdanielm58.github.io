@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: merri;
+            src: url(Merriweather-Light.ttf);
+        }
+
+        @font-face {
+            font-family: merribold;
+            src: url(Merriweather-Black.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding-left: 5%;
+            max-width: 100vw;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-flow: column;
+            background: url(rect865.png) right top / 55% 120% no-repeat,
+                url(fondo2.png) right 30% / 10rem no-repeat,
+                linear-gradient(137deg, rgba(2, 0, 36, 1) 0%, rgba(1, 46, 141, 1) 70%, rgba(0, 95, 255, 1) 100%);
+            font-size: 18px;
+            position: relative;
+        }
+
+        nav {
+            padding-right: 10%;
+            padding-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: verdana;
+        }
+
+        nav a {
+            margin-left: 40px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+
+        nav a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            transform: scalex(0);
+            transition: transform 300ms ease-in-out;
+            background-color: white;
+        }
+
+        nav a:hover::before,
+        nav a:focus::before {
+            transform: scalex(1);
+        }
+
+        nav img {
+            margin-right: auto;
+            height: 40px;
+            width: 40px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            font-family: arial;
+
+        }
+
+        .text-container h1 {
+            font-size: 2.3rem;
+        }
+
+        .header-container div img {
+            width: 25rem;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 5%;
+        }
+
+        .text-container {
+            font-family: merri;
+            padding-top: 60px;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .text-container button {
+            margin-top: 20px;
+            width: 10rem;
+            border-radius: 2.5rem;
+            padding: .5rem 0;
+            font-family: merry;
+            font-family: merribold;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: #2d207c;
+            color: #2d207c;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: color 300ms ease-in-out;
+        }
+
+
+        .text-container button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            z-index: -1;
+            border-radius: 50%;
+            transform: scale(1.5);
+            transition: transform 300ms ease-in-out;
+        }
+
+        .text-container button:hover::before,
+        .text-container button:focus::before {
+            transform: scale(0)
+        }
+
+        .text-container button:hover,
+        .text-container button:focus {
+            color: white;
+
+        }
+
+        .arrow-container{
+            border:3px solid white;
+            position:absolute;
+            top: 86%;
+            left: 50%;
+            display: inline-block;
+            border-radius: 50%;
+            padding: 6px;
+        }
+
+        .arrow {
+            width: 2rem;
+            transform: translatey(4px);
+            animation: arrow-bounce 0.5s linear infinite alternate;
+        }
+
+        section {
+            background-color: white;
+            padding: 40px;
+        }
+
+
+        @keyframes arrow-bounce {
+           from{transform:translatey(2px)}
+           to{transform:translateY(5px)}
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="">
+            <a href="">Paginas web</a>
+            <a href="">Sobre mi</a>
+            <a href="">Proyectos</a>
+            <a href="">Contacto</a>
+        </nav>
+        <div class="header-container">
+            <div class="text-container">
+                <p>hola soy jesus</p>
+                <h1>Desarrollador web freelancer</h1>
+                <button>Contratame</button>
+            </div>
+            <div class="img-container">
+                <img src="pc6.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="arrow-container">
+            <img src="arrow2.png" alt="" class="arrow">
+        </div>
+    </header>
+    <section></section>
+
+</body>
+
+</html>
